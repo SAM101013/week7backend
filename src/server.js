@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 
 app.use("/example", express.static("example"));
+app.use("/safisbooks", express.static("safisbooks"));
 
 //app.use is an object method/example is the argument passed
 //example is the filename where html data files live
