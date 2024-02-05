@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Reset default margin and padding */
 body,
 h1,
 ul {
@@ -8,20 +5,41 @@ ul {
   padding: 0;
 }
 
-/* Set images to display full width */
-img {
-  width: 100%;
-  display: block; /* Ensures the images do not have any extra space around them */
-}
-
-/* Center the heading */
 h1 {
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* Style the link to home */
+/* Style the link to books */
 a {
-  display: block; /* Make the link a block element for proper spacing */
+  display: block;
   text-align: center;
-  margin-bottom: 20px; /* Add some space below the link */
+  margin-bottom: 20px;
+}
+
+img.safisbooks {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Apply hover effect to images */
+img.safisbooks:hover {
+  opacity: 0.8;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-grid a {
+  display: block;
+}
+.safisbooks {
+  max-width: 33vh;
+  height: auto;
 }
