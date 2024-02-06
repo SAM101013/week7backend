@@ -1,58 +1,75 @@
 const express = require("express");
-const fs = require("fs");
-const cheerio = require("cheerio");
 
+// const fs = require("fs");
+// const cheerio = require("cheerio");
+
+// const response =await fetch("http://webadress.com");
 const app = express();
 
-app.use("/example", express.static("example"));
-app.use("/safisbooks", express.static("safisbooks"));
+const fakeArr = [];
 
-app.get("/images", (req, res) => {
-  // Read HTML content
-  const htmlContent = fs.readFileSync(
-    "esoteric.html",
-    "index.html",
-    "archive.html",
-    "utf8"
-  );
-  // Load HTML content in cheerio
-  const $ = cheerio.load(htmlContent);
-
-  const images = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    archive,
-    emerald,
-    es1,
-    es2,
-    es3,
-    es4,
-    es5,
-    es6,
-    es7,
-    es8,
-  ];
-
-  $("img").each((index, element) => {
-    const imageUrl = $(element).attr("src");
-    images.push(imageUrl);
-  });
-
-  //this asks the server to respond to the request to find images
-  res.json(images);
+app.get("/example", (request, response) => {
+  response.send({ message: "success", fakeArr: fakeArr });
 });
+
+app.post("/addBook", (request, response) => {
+  response.send({ message: "success", fakeArr: fakeArr });
+});
+
+//HTTP Verbs -GET, POST, PUT, DELETE
+
+app.listen(5001, () => {
+  console.log("Server is listening on port 5001");
+});
+
+// app.use("/example", express.static("example"));
+// app.use("/safisbooks", express.static("safisbooks"));
+
+// // Read HTML content
+// const htmlContent = fs.readFileSync(
+//   "esoteric.html",
+//   "index.html",
+//   "archive.html",
+//   "utf8"
+// );
+// // Load HTML content in cheerio
+// const $ = cheerio.load(htmlContent);
+
+// const images = [
+//   1,
+//   2,
+//   3,
+//   4,
+//   5,
+//   6,
+//   7,
+//   8,
+//   9,
+//   10,
+//   11,
+//   12,
+//   13,
+//   14,
+//   archive,
+//   emerald,
+//   es1,
+//   es2,
+//   es3,
+//   es4,
+//   es5,
+//   es6,
+//   es7,
+//   es8,
+// ];
+
+// $("img").each((index, element) => {
+//   const imageUrl = $(element).attr("src");
+//   images.push(imageUrl);
+// });
+
+//this asks the server to respond to the request to find images
+//   res.json(images);
+// });
 
 //app.use is an object method/example is the argument passed
 //example is the filename where html data files live
@@ -64,9 +81,6 @@ app.get("/images", (req, res) => {
 
 //the health route makes a get request to check health of the server
 
-app.listen(5001, () => {
-  console.log("Server is listening on port 5001");
-});
-console.log("recieved request to locate images");
+// console.log("recieved request to locate images");
 
 //creating the get request to check server is listening
