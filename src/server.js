@@ -20,7 +20,7 @@ app.get("/books/books", (request, response) => {
   response.send({ message: "success", book: book });
 });
 
-app.post("./books", (request, response) => {
+app.post("/books", (request, response) => {
   fakeArr.push(request.body);
   // console.log(fakeArr);
 
