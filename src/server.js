@@ -8,12 +8,23 @@ const app = express();
 
 const fakeArr = [];
 
-app.get("/example", (request, response) => {
+app.use(express.json());
+
+app.get("/books", (request, response) => {
   response.send({ message: "success", fakeArr: fakeArr });
 });
 
-app.post("/addBook", (request, response) => {
-  response.send({ message: "success", fakeArr: fakeArr });
+app.get("/books/books", (request, response) => {
+  //get the irst book
+  const book = fakeArr[0];
+  response.send({ message: "success", book: book });
+});
+
+app.post("./books", (request, response) => {
+  fakeArr.push(request.body);
+  // console.log(fakeArr);
+
+  response.send({ message: "success", newBook: fakeArr[fakeArr.length - 1] });
 });
 
 //HTTP Verbs -GET, POST, PUT, DELETE
