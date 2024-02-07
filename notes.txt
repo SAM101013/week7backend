@@ -1,0 +1,104 @@
+//mybooks an array of 20
+
+[
+  {
+    "title": "The Secret Garden",
+    "genre": "Mystery",
+    "author": "Victoria Green"
+  },
+  {
+    "title": "Midnight Shadows",
+    "genre": "Thriller",
+    "author": "Elena Blackwood"
+  },
+  {
+    "title": "Echoes of Eternity",
+    "genre": "Fantasy",
+    "author": "Lucas Stone"
+  },
+  {
+    "title": "Whispers in the Wind",
+    "genre": "Romance",
+    "author": "Amber Dawn"
+  },
+  {
+    "title": "Beyond the Stars",
+    "genre": "Science Fiction",
+    "author": "Jason Stardust"
+  },
+  {
+    "title": "Lost in Time",
+    "genre": "Adventure",
+    "author": "Olivia Rivers"
+  },
+  {
+    "title": "Crimson Skies",
+    "genre": "Horror",
+    "author": "Derek Nightshade"
+  },
+  {
+    "title": "Sapphire Seas",
+    "genre": "Historical Fiction",
+    "author": "Isabella Blue"
+  },
+  {
+    "title": "The Enchanted Forest",
+    "genre": "Children's",
+    "author": "Ella Evergreen"
+  },
+  {
+    "title": "The Emerald Isle",
+    "genre": "Historical Romance",
+    "author": "Patrick O'Kelly"
+  },
+  {
+    "title": "Golden Dreams",
+    "genre": "Biography",
+    "author": "Aurora Gold"
+  },
+  {
+    "title": "Silver Shadows",
+    "genre": "Paranormal",
+    "author": "Luna Nightfall"
+  },
+  {
+    "title": "Redemption Road",
+    "genre": "Western",
+    "author": "Clayton West"
+  },
+  {
+    "title": "Mystic Moonlight",
+    "genre": "Supernatural",
+    "author": "Selena Moonbeam"
+  },
+  {
+    "title": "Frozen Dreams",
+    "genre": "Dystopian",
+    "author": "Ivy Frost"
+  },
+  {
+    "title": "Eternal Flames",
+    "genre": "Urban Fantasy",
+    "author": "Phoenix Blaze"
+  },
+  {
+    "title": "Dark Desires",
+    "genre": "Gothic",
+    "author": "Raven Nightshade"
+  },
+  {
+    "title": "Crystal Clear",
+    "genre": "Young Adult",
+    "author": "Crystal Waters"
+  },
+  {
+    "title": "Neon Nights",
+    "genre": "Cyberpunk",
+    "author": "Zoe Neon"
+  },
+  {
+    "title": "Whirlwind Whispers",
+    "genre": "Contemporary",
+    "author": "Willow Breeze"
+  }
+]
